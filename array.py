@@ -45,3 +45,5 @@ rndAR = np.random.randint(1,50,(2,5))
 
 filter_ar = np.logical_and(rndAR>30, rndAR<50)
 print(filter_ar)
+f_ar = rndAR[filter_ar]
+print(f_ar)
