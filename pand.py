@@ -20,3 +20,31 @@ print(df)
 data_set = pd.DataFrame(df,index=['S1','S2','S3','S4'],columns=['Age','Grade1', 'Grade2'])
 data_set['Grade3'] = [9,6,7,10]
 print(data_set)
+
+# loc
+x = data_set.loc['S2']
+print(x)
+
+# iloc
+y = data_set.iloc[1][3]
+print(y)
+
+# filter iloc
+filtered_ds = data_set.iloc[:,1:3]
+print(filtered_ds)
+
+# dropping column
+print(data_set.drop('Grade1',axis=1))
+
+# replacing data in data frame
+data_set = data_set.replace(10,12)
+print(data_set)
+
+data_set = data_set.replace({12:10,9:15})
+print(data_set)
+
+# check first rows
+print(data_set.head(3))
+
+# check last rows
+print(data_set.tail(2))
