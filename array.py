@@ -26,3 +26,15 @@ print(matrix2-matrix3)
 #division
 npDivide = np.divide(matrix2,matrix3)
 print(npDivide)
+
+#squareroot
+squareRoot = np.math.sqrt(25)
+print(squareRoot)
+
+#normal distribution
+rndND = np.random.standard_normal((3,4))
+print(rndND)
+print("")
+#uniform distribution
+rndUD = np.random.uniform(1,15,(3,4))
+print(rndUD)
