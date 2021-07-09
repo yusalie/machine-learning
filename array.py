@@ -38,3 +38,10 @@ print("")
 #uniform distribution
 rndUD = np.random.uniform(1,15,(3,4))
 print(rndUD)
+
+############################
+
+rndAR = np.random.randint(1,50,(2,5))
+
+filter_ar = np.logical_and(rndAR>30, rndAR<50)
+print(filter_ar)
