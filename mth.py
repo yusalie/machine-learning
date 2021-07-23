@@ -58,4 +58,9 @@ plt.ylabel('electricity usage')
 # Bar chart
 plt.subplot(3, 4, 6)
 plt.bar(Month, customer1,width=0.8 ,color='blue')
+
+# box 
+plt.subplot(3, 4, 7)
+plt.boxplot(customer1, notch=False, vert=True)
+plt.boxplot([customer1,customer2],patch_artist=True, boxprops=dict(facecolor='red',color='black'),whiskerprops=dict(color='blue'), capprops=dict(color='green'), medianprops=dict(color='yellow'))
 plt.show()
