@@ -1,6 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sn
+import numpy as np
+from IPython.display import display
 
 data_set1 =pd.read_csv('Data_Set.csv')
 
@@ -28,4 +30,13 @@ data_cov = data_set6.cov()
 print(data_cov)
 sn.heatmap(data_cov.corr())
 plt.show()
+
 # Missing values
+data_set6_info = data_set6.info()
+print(data_set6_info)
+
+data_set7 = data_set6.replace('!',np.NaN)
+
+print(data_set7.info())
+# displays data set
+display(data_set7)
